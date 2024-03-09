@@ -2,16 +2,12 @@ public class MenuItem {
    int id;
    String nombrePlatillo;
    String descripcion;
-   double precio;    
-   Boolean conQueso;
-   Boolean esVegetariano;
+   double precio;  
 
    public MenuItem(int id, 
                    String nombrePlatillo, 
                    String descripcion,
-                   double precio, 
-                   Boolean conQueso, 
-                   Boolean esVegetariano){
+                   double precio){
         this.id = id;
         this.nombrePlatillo = nombrePlatillo;
         this.descripcion = descripcion;
@@ -33,14 +29,4 @@ public class MenuItem {
    public double getPrecio(){
     return precio;
    }
-
-   public boolean conQueso(){
-    return conQueso;
-   }
-
-   public boolean esVegetariano(){
-    return esVegetariano();
-   }
-
-
 }

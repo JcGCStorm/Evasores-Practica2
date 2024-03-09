@@ -1,13 +1,13 @@
 public class MenuGeneralIterador implements Iterator {
-    MenuItem[] items;
+    Hamburguesa[] items;
     int posicion = 0;
 
-    public MenuGeneralIterador(MenuItem[] items){
+    public MenuGeneralIterador(Hamburguesa[] items){
         this.items = items;
     }
 
     public Object next(){
-        MenuItem menuItem = items[posicion];
+        Hamburguesa menuItem = items[posicion];
         posicion = posicion + 1;
         return menuItem;
     }    

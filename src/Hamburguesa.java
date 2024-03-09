@@ -103,6 +103,14 @@ public abstract class Hamburguesa {
     }
 
     /**
+     * Método para obtener el ID de la hamburguesa
+     * @return El ID de la hamburguesa
+     */
+    public int getID() {
+        return id;
+    }
+
+    /**
      * Método para obtener la descripción 
      * @return La descripción de la hamburguesa.
      */

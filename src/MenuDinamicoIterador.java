@@ -1,21 +1,21 @@
 import java.util.ArrayList;
 
 public class MenuDinamicoIterador implements Iterator{
-   ArrayList<MenuItem> items;
-   int position = 0;
+   ArrayList<Hamburguesa> items;
+   int posicion = 0;
 
-   public MenuDinamicoIterador(ArrayList<MenuItem> items){
+   public MenuDinamicoIterador(ArrayList<Hamburguesa> items){
       this.items = items;
    }
 
-    public MenuItem next() {
-       MenuItem item = items.get(position);
-       position = position + 1;
+    public Hamburguesa next() {
+       Hamburguesa item = items.get(posicion);
+       posicion = posicion + 1;
        return item;
     }
     
     public boolean hasNext(){
-        if (position >= items.size()){
+        if (posicion >= items.size()){
             return false;
         } else {
             return true;

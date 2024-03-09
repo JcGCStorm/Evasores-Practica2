@@ -23,11 +23,10 @@ public class RobotPrueba {
 
     private void printMenu(Iterator iterador){
         while (iterador.hasNext()){
-            MenuItem menuItem = (MenuItem)iterador.next();
+            Hamburguesa menuItem = (Hamburguesa)iterador.next();
             System.out.println(menuItem.getID() + ", ");
             System.out.println(menuItem.getNombre() + ", ");
             System.out.println(menuItem.getDescripcion() + ", ");
-            System.out.println(menuItem.getPrecio());
         }
     }
 }

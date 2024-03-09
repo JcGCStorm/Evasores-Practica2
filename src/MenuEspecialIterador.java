@@ -3,21 +3,24 @@ import java.util.Enumeration;
 import java.util.NoSuchElementException;
 
 public class MenuEspecialIterador<HashTable> implements Iterator{
+   @SuppressWarnings("rawtypes")
    Hashtable items;
    int posicion = 0;
 
+   @SuppressWarnings("rawtypes")
    public MenuEspecialIterador(HashTable items){
       this.items = (Hashtable) items;
    }
 
-    public MenuItem next() {
+    @SuppressWarnings("unchecked")
+    public Hamburguesa next() {
        if (hasNext()){
-        Enumeration<MenuItem> valores = items.elements();
+        Enumeration<Hamburguesa> elementos = items.elements();
           for (int i = 0; i < posicion; i = i + 1) {
-            valores.nextElement();
+            elementos.nextElement();
           }
         posicion = posicion + 1;
-        return valores.nextElement();
+        return elementos.nextElement();
        } else {
         throw new NoSuchElementException();
        }

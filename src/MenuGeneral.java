@@ -1,20 +1,22 @@
 public class MenuGeneral implements Menu {
     static final int  maximoDeItems = 6;
     int numeroDeItems = 0;
-    MenuItem[] menuItems;
+    Hamburguesa[] menuItems;
 
   public MenuGeneral(){
-    this.menuItems = new MenuItem[maximoDeItems];
-    addItems(numeroDeItems, null, null, maximoDeItems, null, null);
+    this.menuItems = new Hamburguesa[maximoDeItems];
+
+    addItems(new HamburguesaCrazy8());
+    addItems(new HamburguesaDemonio());
+    addItems(new HamburguesaVitaCarnis());
+  
   }  
     
-  public void addItems(int id, String nombrePlatillo, String descripcion,
-                       double precio,Boolean conQueso, Boolean esVegetariano){
-      MenuItem menuItem = new MenuItem(id, nombrePlatillo, descripcion, precio, conQueso, esVegetariano);
+  public void addItems(Hamburguesa hamburguesa){
       if (numeroDeItems >= maximoDeItems){
         System.err.println("No sé bien si esto se debe de implementar");
       } else {
-        menuItems[numeroDeItems] = menuItem;
+        menuItems[numeroDeItems] = hamburguesa;
         numeroDeItems = numeroDeItems + 1;
       }
 }

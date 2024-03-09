@@ -5,7 +5,7 @@
 public class HamburguesaVitaCarnis extends Hamburguesa {
 
     /**
-    * Constructor para crear una nueva HamburguesaFilos
+    * Constructor para crear una nueva HamburguesaVitaCarnis
     * 
     */
    public HamburguesaVitaCarnis() {

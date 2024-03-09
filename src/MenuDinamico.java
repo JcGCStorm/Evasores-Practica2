@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 
 public class MenuDinamico implements Menu{
-   ArrayList<MenuItem> menuItems;
+   ArrayList<Hamburguesa> menuItems;
 
    public MenuDinamico(){
-    menuItems = new ArrayList<MenuItem>();
+    menuItems = new ArrayList<Hamburguesa>();
 
-    addItems(1211, "Quancha", "lol", 5.3, false, true);
+    addItems(new HamburguesaCiencias());
+    addItems(new HamburguesaFilos());
+    addItems(new HamburguesaInge());
    }
 
-   public void addItems(int id, String nombrePlatillo, String descripcion,
-                        double precio,Boolean conQueso, Boolean esVegetariano){
-        MenuItem menuItem = new MenuItem(id, nombrePlatillo, descripcion, precio, conQueso, esVegetariano);
-        menuItems.add(menuItem);
+   public void addItems(Hamburguesa hamburguesa){
+        menuItems.add(hamburguesa);
    }
 
    @Override
