@@ -13,20 +13,20 @@ public class RobotPrueba {
       Iterator menuDinamicoIterador = menuDinamico.createIterator();
       Iterator menuGeneralIterador = menuGeneral.createIterator();
       Iterator menuEspecialIyIterador = menuEspecial.createIterator();
-         System.out.println("Menu \n ------ MenuDinamico");
+         System.out.println("Menu \n ------ MenuDinamico ------");
       printMenu(menuDinamicoIterador);
-        System.out.println("Menu \n ------ MenuGeneral");
+        System.out.println(" ------ MenuGeneral ------");
       printMenu(menuGeneralIterador);
-        System.out.println("Menu Especial\n ------ MenuEspecial");
+        System.out.println(" ------ MenuEspecial ------");
        printMenu(menuEspecialIyIterador);
     }
 
     private void printMenu(Iterator iterador){
         while (iterador.hasNext()){
             Hamburguesa menuItem = (Hamburguesa)iterador.next();
-            System.out.println(menuItem.getID() + ", ");
-            System.out.println(menuItem.getNombre() + ", ");
-            System.out.println(menuItem.getDescripcion() + ", ");
+            System.out.println("ID:" + menuItem.getID());
+            System.out.println(menuItem.getNombre());
+            System.out.println(menuItem.getDescripcion() + "\n");
         }
     }
 }
