@@ -1,51 +1,50 @@
+import java.util.Scanner;
+
 /**
- * La clase Hamburguesa representa una hamburguesa genérica que puede ser preparada
- * Es una clase abstracta que define el esqueleto básico de cómo se prepara una hamburguesa
+ * La clase Hamburguesa representa una hamburguesa genérica que puede ser
+ * preparada
+ * Es una clase abstracta que define el esqueleto básico de cómo se prepara una
+ * hamburguesa
  */
 public abstract class Hamburguesa {
     protected String nombre;
     protected int id;
     protected String descripcion;
     protected boolean tieneQueso;
-    protected boolean esVegetariana;
+
 
     /**
-     * Constructor para inicializar una hamburguesa con sus atributos
-     * @param nombre El nombre de la hamburguesa
-     * @param descripcion La descripción de la hamburguesa
-     * @param precio El precio de la hamburguesa
-     * @param tieneQueso Indica si la hamburguesa tiene queso o no
-     * @param esVegetariana Indica si la hamburguesa es vegetariana o no
-     *
-    public Hamburguesa(String nombre, String descripcion, double precio, boolean tieneQueso, boolean esVegetariana) {
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.precio = precio;
-        this.tieneQueso = tieneQueso;
-        this.esVegetariana = esVegetariana;
-    }
-    */
-
-    /**
-     * Método para preparar una hamburguesa. Define el flujo general de cómo se prepara
+     * Método para preparar una hamburguesa. Define el flujo general de cómo se
+     * prepara
      * Este método no puede ser sobrescrito por las subclases
      */
     public final void prepararHamburguesa() {
         ponerPan();
         ponerMayonesa();
         ponerMostaza();
-        if (!esVegetariana){
-            ponerCarne();
-            prepararCarne();
-        }
-        if (tieneQueso) {
-            ponerQueso();
+
+        Scanner scanner = new Scanner(System.in);
+        boolean respuestaValida = false;
+        String respuesta;
+
+        while (!respuestaValida) {
+            System.out.println("¿Deseas agregar queso? (Sí/No)");
+            respuesta = scanner.nextLine();
+
+            if (respuesta.equalsIgnoreCase("Si") || respuesta.equalsIgnoreCase("Sí")) {
+                ponerQueso();
+                respuestaValida = true;
+            } else if (respuesta.equalsIgnoreCase("No")) {
+                respuestaValida = true;
+            } else {
+                System.out.println("Respuesta no válida ): Por favor responde 'Sí' o 'No'");
+            }
         }
         ponerVegetales();
         ponerCatsup();
         ponerPan();
+
     }
-    // METODO PENDIENTE, DEPENDE DE COMO LO VAYAMOS A CONECTAR AL ROBOT
 
     /**
      * Método abstracto para preparar la carne de la hamburguesa
@@ -56,7 +55,6 @@ public abstract class Hamburguesa {
      * Método abstracto para poner el pan de la hamburguesa
      */
     protected abstract void ponerPan();
-
 
     /**
      * Método abstracto para poner la mayonesa en la hamburguesa
@@ -85,8 +83,6 @@ public abstract class Hamburguesa {
         System.out.println("Poniendo queso...");
     }
 
-    
-
     /**
      * Método hook para poner la carne en la hamburguesa
      */
@@ -96,6 +92,7 @@ public abstract class Hamburguesa {
 
     /**
      * Método para obtener el nombre de la hamburguesa
+     * 
      * @return El nombre de la hamburguesa
      */
     public String getNombre() {
@@ -104,6 +101,7 @@ public abstract class Hamburguesa {
 
     /**
      * Método para obtener el ID de la hamburguesa
+     * 
      * @return El ID de la hamburguesa
      */
     public int getID() {
@@ -111,28 +109,12 @@ public abstract class Hamburguesa {
     }
 
     /**
-     * Método para obtener la descripción 
+     * Método para obtener la descripción
+     * 
      * @return La descripción de la hamburguesa.
      */
     public String getDescripcion() {
         return descripcion;
-    }
-
-
-    /**
-     * Método para verificar si la hamburguesa tiene queso o no
-     * @return true si la hamburguesa tiene queso, false de lo contrario
-     */
-    public boolean tieneQueso() {
-        return tieneQueso;
-    }
-
-      /**
-     * Método para verificar si la hamburguesa es vegetariana o no
-     * @return true si la hamburguesa tiene queso, false de lo contrario
-     */
-    public boolean esVegetariana() {
-        return esVegetariana;
     }
 
 

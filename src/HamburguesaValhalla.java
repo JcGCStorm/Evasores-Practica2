@@ -13,7 +13,6 @@ public class HamburguesaValhalla extends Hamburguesa {
         super.id = 103;
         super.descripcion = "Esta hamburguesa te llevará al Valhalla. Spoiler: morirás al terminarla. $100000";
         super.tieneQueso = false;
-        super.esVegetariana = true;
     }
 
     /**

@@ -13,7 +13,6 @@ public class HamburguesaVitaCarnis extends Hamburguesa {
        super.id = 201;
        super.descripcion = "¿Crees haberlo probado todo? ¿Eres fan de las películas de Zombies o te interesa Milwaukee? Entonces, ¡Esta hamburguesa es para tí! $300";
        super.tieneQueso = false;
-       super.esVegetariana = true;
    }
 
    /**
@@ -21,7 +20,7 @@ public class HamburguesaVitaCarnis extends Hamburguesa {
     */
    @Override
    protected void ponerPan() {
-       System.out.println("Poniendo pan");
+       System.out.println("Poniendo pan cocechado de una planta extraña");
    }
 
    /**
@@ -29,7 +28,7 @@ public class HamburguesaVitaCarnis extends Hamburguesa {
     */
    @Override
    protected void ponerMayonesa() {
-       System.out.println("Poniendo mayonesa");
+       System.out.println("Poniendo mayonesa cortesia de Happy Meat Farms");
    }
 
    /**
@@ -37,7 +36,7 @@ public class HamburguesaVitaCarnis extends Hamburguesa {
     */
    @Override
    protected void ponerMostaza() {
-       System.out.println("Poniendo mostaza");
+       System.out.println("Poniendo mostaza extraida de un Harvester");
    }
 
    /**
@@ -45,7 +44,7 @@ public class HamburguesaVitaCarnis extends Hamburguesa {
     */
    @Override
    protected void prepararCarne() {
-       System.out.println("Preparando carne humana");
+       System.out.println("Obteniendo y preparando carne humana, puede demorar un poco");
    }
 
    /**
@@ -53,7 +52,7 @@ public class HamburguesaVitaCarnis extends Hamburguesa {
     */
    @Override
    protected void ponerVegetales() {
-       System.out.println("Poniendo vegetales. Lechuga y jitomates.");
+       System.out.println("Poniendo vegetales. Lechuga, jitomates, Crawler y caparazón de Trimming");
    }
 
    /**
@@ -61,6 +60,6 @@ public class HamburguesaVitaCarnis extends Hamburguesa {
     */
    @Override
    protected void ponerCatsup() {
-       System.out.println("Poniendo catsup");
+       System.out.println("Poniendo catsup de Meat Snake");
    }
 }

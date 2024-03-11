@@ -9,11 +9,10 @@ public class HamburguesaCrazy8 extends Hamburguesa {
     * 
     */
    public HamburguesaCrazy8() {
-       super.nombre = "Hamburguesa Niño Pobre";
+       super.nombre = "Hamburguesa Crazy8";
        super.id = 203;
        super.descripcion = "Si lo que quieres es una experiencia 99.9% pura, esta hamburguesa es para ti. Con carne directamente traída de los pollos Hermanos y un ingrediente secreto. $400";
        super.tieneQueso = false;
-       super.esVegetariana = true;
    }
 
    /**
@@ -21,7 +20,7 @@ public class HamburguesaCrazy8 extends Hamburguesa {
     */
    @Override
    protected void ponerPan() {
-       System.out.println("Poniendo pan");
+       System.out.println("Poniendo pan con ajonjoli");
    }
 
    /**
@@ -37,7 +36,7 @@ public class HamburguesaCrazy8 extends Hamburguesa {
     */
    @Override
    protected void ponerMostaza() {
-       System.out.println("Poniendo mostaza");
+       System.out.println("Poniendo mostaza Pinkman");
    }
 
    /**
@@ -53,7 +52,7 @@ public class HamburguesaCrazy8 extends Hamburguesa {
     */
    @Override
    protected void ponerVegetales() {
-       System.out.println("Poniendo vegetales. Lechuga y jitomates.");
+       System.out.println("Poniendo vegetales. Lechuga, jitomates y Ricino.");
    }
 
    /**

@@ -13,7 +13,6 @@ public class HamburguesaLeviatan extends Hamburguesa {
         super.id = 102;
         super.descripcion = "Nuestra hamburguesa que te hundirá de sabor. $10000";
         super.tieneQueso = false;
-        super.esVegetariana = true;
     }
 
     /**
@@ -61,6 +60,6 @@ public class HamburguesaLeviatan extends Hamburguesa {
      */
     @Override
     protected void ponerCatsup() {
-        System.out.println("Poniendo catsup hecha con tortugas giganres");
+        System.out.println("Poniendo catsup hecha con tortugas gigantes");
     }
 }

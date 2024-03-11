@@ -10,10 +10,9 @@ public class HamburguesaFilos extends Hamburguesa {
      */
     public HamburguesaFilos() {
         super.nombre = "Hamburguesa Estilo Filos";
-        super.id = 002;
-        super.descripcion = "Nuestra hamburguesa más mágica, con toques de conciencia de clase. $109";
+        super.id = 302;
+        super.descripcion = "Nuestra hamburguesa más mágica proveniente de la Fac de Filosofia y Letras, con toques de conciencia de clase. VEGETARIANA. $109";
         super.tieneQueso = false;
-        super.esVegetariana = true;
     }
 
     /**
@@ -45,7 +44,7 @@ public class HamburguesaFilos extends Hamburguesa {
      */
     @Override
     protected void prepararCarne() {
-        System.out.println("Preparando carne estilo FIlos, con un toque de una hierba muy especial que te hará volar (oregano obviamente)");
+        System.out.println("Preparando carne estilo Filos, VEGETARIANA, de soya y con una hierba muy especial que te hará volar (oregano obviamente)");
     }
 
     /**

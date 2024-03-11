@@ -10,10 +10,10 @@ public class HamburguesaCiencias extends Hamburguesa {
      */
     public HamburguesaCiencias() {
         super.nombre = "Hamburguesa Estilo Ciencias";
-        super.id = 001;
-        super.descripcion = "Una de nuestras hamburguesas más vendidas, barata y con mucha proteína. $150";
+        super.id = 301;
+        super.descripcion = "Una de nuestras hamburguesas más vendidas, proveniente de Ciencias, barata y con mucha proteína. $150";
         super.tieneQueso = false;
-        super.esVegetariana = false;
+        
     }
 
     /**

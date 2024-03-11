@@ -13,7 +13,6 @@ public class HamburguesaDemonio extends Hamburguesa {
         super.id = 101;
         super.descripcion = "Nuestra hamburguesa hecha de demonio. No nos hacemos de escuchar susurros y un posterior exorcismo. $500";
         super.tieneQueso = false;
-        super.esVegetariana = true;
     }
 
     /**

@@ -10,10 +10,9 @@ public class HamburguesaInge extends Hamburguesa {
      */
     public HamburguesaInge() {
         super.nombre = "Hamburguesa Estilo Fac de Inge";
-        super.id = 003;
-        super.descripcion = "Nuestra hamburguesa más funada y que no puede demostrar si es hamburguesa. $90";
+        super.id = 303;
+        super.descripcion = "Desde la facultad de Ingenieria llega nuestra hamburguesa más funada y que no puede demostrar si es hamburguesa. $90";
         super.tieneQueso = false;
-        super.esVegetariana = false;
     }
 
     /**

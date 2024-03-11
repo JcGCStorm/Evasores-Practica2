@@ -13,7 +13,6 @@ public class HamburguesaNinoPobre extends Hamburguesa {
        super.id = 202;
        super.descripcion = "Esta hamburguesa cuenta con la carne especial de la casa, creada de la combinación de todas las carnes de nuestro menú. $1000";
        super.tieneQueso = false;
-       super.esVegetariana = true;
    }
 
    /**
@@ -21,7 +20,7 @@ public class HamburguesaNinoPobre extends Hamburguesa {
     */
    @Override
    protected void ponerPan() {
-       System.out.println("Poniendo pan");
+       System.out.println("Poniendo pan integral");
    }
 
    /**
@@ -29,7 +28,7 @@ public class HamburguesaNinoPobre extends Hamburguesa {
     */
    @Override
    protected void ponerMayonesa() {
-       System.out.println("Poniendo mayonesa");
+       System.out.println("Poniendo mayonesa baja en grasas");
    }
 
    /**
@@ -37,7 +36,7 @@ public class HamburguesaNinoPobre extends Hamburguesa {
     */
    @Override
    protected void ponerMostaza() {
-       System.out.println("Poniendo mostaza");
+       System.out.println("Poniendo un toque de mostaza");
    }
 
    /**
@@ -45,7 +44,7 @@ public class HamburguesaNinoPobre extends Hamburguesa {
     */
    @Override
    protected void prepararCarne() {
-       System.out.println("Preparando carne especial (combinación)");
+       System.out.println("Preparando carne especial (combinación tapa arterias)");
    }
 
    /**
@@ -53,7 +52,7 @@ public class HamburguesaNinoPobre extends Hamburguesa {
     */
    @Override
    protected void ponerVegetales() {
-       System.out.println("Poniendo vegetales. Lechuga y jitomates.");
+       System.out.println("Poniendo vegetales. Lechuga, jitomates, cebolla y ricino");
    }
 
    /**
